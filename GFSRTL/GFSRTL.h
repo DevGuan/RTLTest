@@ -11,9 +11,10 @@
 
 // Category for RTL
 #import "RTLManager.h"
-#import "UILabel+RTL.h"
-#import "UITextField+RTL.h"
-#import "UITextView+RTL.h"
+//#import "UILabel+RTL.h"
+//#import "UITextField+RTL.h"
+//#import "UITextView+RTL.h"
+//#import "UINavigationController+RTL.h"
 
 // Change from Masonry
 #import "UIView+RTL.h"
