@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 #import <Masonry/View+MASAdditions.h>
 @interface UIView (RTL)
+/**
+ 支持RTL的left
+ */
 - (MASViewAttribute *)mas_leftRTL;
+/**
+ 支持RTL的right
+ */
 - (MASViewAttribute *)mas_rightRTL;
 @end

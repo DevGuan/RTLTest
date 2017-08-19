@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "GFSRTL.h"
-#import "YSNavigationController.h"
 @interface AppDelegate ()
 
 @end
