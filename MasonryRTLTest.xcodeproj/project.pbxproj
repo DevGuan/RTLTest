@@ -8,24 +8,39 @@
 
 /* Begin PBXBuildFile section */
 		0D30689B0D1471F1D3CBB55E /* libPods-MasonryRTLTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 94105E0FC581BF67A498FE98 /* libPods-MasonryRTLTest.a */; };
+		D6528D231F481071000737B2 /* MASConstraint+RTL.m in Sources */ = {isa = PBXBuildFile; fileRef = D6528D161F481071000737B2 /* MASConstraint+RTL.m */; };
+		D6528D241F481071000737B2 /* MASConstraintMaker+RTL.m in Sources */ = {isa = PBXBuildFile; fileRef = D6528D181F481071000737B2 /* MASConstraintMaker+RTL.m */; };
+		D6528D251F481071000737B2 /* RTLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6528D1A1F481071000737B2 /* RTLManager.m */; };
+		D6528D261F481071000737B2 /* UILabel+RTL.m in Sources */ = {isa = PBXBuildFile; fileRef = D6528D1C1F481071000737B2 /* UILabel+RTL.m */; };
+		D6528D271F481071000737B2 /* UITextField+RTL.m in Sources */ = {isa = PBXBuildFile; fileRef = D6528D1E1F481071000737B2 /* UITextField+RTL.m */; };
+		D6528D281F481071000737B2 /* UITextView+RTL.m in Sources */ = {isa = PBXBuildFile; fileRef = D6528D201F481071000737B2 /* UITextView+RTL.m */; };
+		D6528D291F481071000737B2 /* UIView+RTL.m in Sources */ = {isa = PBXBuildFile; fileRef = D6528D221F481071000737B2 /* UIView+RTL.m */; };
 		D664A81C1F46CA720069A63E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D664A81B1F46CA720069A63E /* main.m */; };
 		D664A81F1F46CA720069A63E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D664A81E1F46CA720069A63E /* AppDelegate.m */; };
 		D664A8221F46CA720069A63E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D664A8211F46CA720069A63E /* ViewController.m */; };
 		D664A8271F46CA720069A63E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D664A8261F46CA720069A63E /* Assets.xcassets */; };
 		D664A82A1F46CA720069A63E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D664A8281F46CA720069A63E /* LaunchScreen.storyboard */; };
-		D664A8331F46CDB70069A63E /* MASConstraintMaker+RTL.m in Sources */ = {isa = PBXBuildFile; fileRef = D664A8321F46CDB70069A63E /* MASConstraintMaker+RTL.m */; };
-		D664A8361F46D3950069A63E /* MASConstraint+RTL.m in Sources */ = {isa = PBXBuildFile; fileRef = D664A8351F46D3950069A63E /* MASConstraint+RTL.m */; };
-		D6E184D11F46EE7C00F19D5A /* UIView+RTL.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E184D01F46EE7C00F19D5A /* UIView+RTL.m */; };
-		D6E184D41F46F49A00F19D5A /* UILabel+RTL.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E184D31F46F49A00F19D5A /* UILabel+RTL.m */; };
-		D6E184D71F46F50000F19D5A /* UITextView+RTL.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E184D61F46F50000F19D5A /* UITextView+RTL.m */; };
-		D6E184DA1F46F59A00F19D5A /* UITextField+RTL.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E184D91F46F59A00F19D5A /* UITextField+RTL.m */; };
-		D6E184DD1F46F74400F19D5A /* RTLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D6E184DC1F46F74400F19D5A /* RTLManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1EF1DFE9AF95DB6DD4D0F01A /* Pods-MasonryRTLTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryRTLTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-MasonryRTLTest/Pods-MasonryRTLTest.release.xcconfig"; sourceTree = "<group>"; };
 		8F3E27EEE79AC3AAAA13422D /* Pods-MasonryRTLTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryRTLTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MasonryRTLTest/Pods-MasonryRTLTest.debug.xcconfig"; sourceTree = "<group>"; };
 		94105E0FC581BF67A498FE98 /* libPods-MasonryRTLTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MasonryRTLTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6528D141F481071000737B2 /* GFSRTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GFSRTL.h; sourceTree = "<group>"; };
+		D6528D151F481071000737B2 /* MASConstraint+RTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+RTL.h"; sourceTree = "<group>"; };
+		D6528D161F481071000737B2 /* MASConstraint+RTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASConstraint+RTL.m"; sourceTree = "<group>"; };
+		D6528D171F481071000737B2 /* MASConstraintMaker+RTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraintMaker+RTL.h"; sourceTree = "<group>"; };
+		D6528D181F481071000737B2 /* MASConstraintMaker+RTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASConstraintMaker+RTL.m"; sourceTree = "<group>"; };
+		D6528D191F481071000737B2 /* RTLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTLManager.h; sourceTree = "<group>"; };
+		D6528D1A1F481071000737B2 /* RTLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTLManager.m; sourceTree = "<group>"; };
+		D6528D1B1F481071000737B2 /* UILabel+RTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+RTL.h"; sourceTree = "<group>"; };
+		D6528D1C1F481071000737B2 /* UILabel+RTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+RTL.m"; sourceTree = "<group>"; };
+		D6528D1D1F481071000737B2 /* UITextField+RTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+RTL.h"; sourceTree = "<group>"; };
+		D6528D1E1F481071000737B2 /* UITextField+RTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+RTL.m"; sourceTree = "<group>"; };
+		D6528D1F1F481071000737B2 /* UITextView+RTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+RTL.h"; sourceTree = "<group>"; };
+		D6528D201F481071000737B2 /* UITextView+RTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+RTL.m"; sourceTree = "<group>"; };
+		D6528D211F481071000737B2 /* UIView+RTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RTL.h"; sourceTree = "<group>"; };
+		D6528D221F481071000737B2 /* UIView+RTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RTL.m"; sourceTree = "<group>"; };
 		D664A8171F46CA720069A63E /* MasonryRTLTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasonryRTLTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D664A81B1F46CA720069A63E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D664A81D1F46CA720069A63E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,21 +50,6 @@
 		D664A8261F46CA720069A63E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D664A8291F46CA720069A63E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D664A82B1F46CA720069A63E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D664A8311F46CDB70069A63E /* MASConstraintMaker+RTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraintMaker+RTL.h"; sourceTree = "<group>"; };
-		D664A8321F46CDB70069A63E /* MASConstraintMaker+RTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASConstraintMaker+RTL.m"; sourceTree = "<group>"; };
-		D664A8341F46D3950069A63E /* MASConstraint+RTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+RTL.h"; sourceTree = "<group>"; };
-		D664A8351F46D3950069A63E /* MASConstraint+RTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MASConstraint+RTL.m"; sourceTree = "<group>"; };
-		D6E184CF1F46EE7C00F19D5A /* UIView+RTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RTL.h"; sourceTree = "<group>"; };
-		D6E184D01F46EE7C00F19D5A /* UIView+RTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RTL.m"; sourceTree = "<group>"; };
-		D6E184D21F46F49A00F19D5A /* UILabel+RTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+RTL.h"; sourceTree = "<group>"; };
-		D6E184D31F46F49A00F19D5A /* UILabel+RTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+RTL.m"; sourceTree = "<group>"; };
-		D6E184D51F46F50000F19D5A /* UITextView+RTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+RTL.h"; sourceTree = "<group>"; };
-		D6E184D61F46F50000F19D5A /* UITextView+RTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+RTL.m"; sourceTree = "<group>"; };
-		D6E184D81F46F59A00F19D5A /* UITextField+RTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+RTL.h"; sourceTree = "<group>"; };
-		D6E184D91F46F59A00F19D5A /* UITextField+RTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+RTL.m"; sourceTree = "<group>"; };
-		D6E184DB1F46F74400F19D5A /* RTLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTLManager.h; sourceTree = "<group>"; };
-		D6E184DC1F46F74400F19D5A /* RTLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTLManager.m; sourceTree = "<group>"; };
-		D6E184DE1F46FA5800F19D5A /* GFSRTL.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GFSRTL.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +81,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D6528D131F481071000737B2 /* GFSRTL */ = {
+			isa = PBXGroup;
+			children = (
+				D6528D141F481071000737B2 /* GFSRTL.h */,
+				D6528D151F481071000737B2 /* MASConstraint+RTL.h */,
+				D6528D161F481071000737B2 /* MASConstraint+RTL.m */,
+				D6528D171F481071000737B2 /* MASConstraintMaker+RTL.h */,
+				D6528D181F481071000737B2 /* MASConstraintMaker+RTL.m */,
+				D6528D191F481071000737B2 /* RTLManager.h */,
+				D6528D1A1F481071000737B2 /* RTLManager.m */,
+				D6528D1B1F481071000737B2 /* UILabel+RTL.h */,
+				D6528D1C1F481071000737B2 /* UILabel+RTL.m */,
+				D6528D1D1F481071000737B2 /* UITextField+RTL.h */,
+				D6528D1E1F481071000737B2 /* UITextField+RTL.m */,
+				D6528D1F1F481071000737B2 /* UITextView+RTL.h */,
+				D6528D201F481071000737B2 /* UITextView+RTL.m */,
+				D6528D211F481071000737B2 /* UIView+RTL.h */,
+				D6528D221F481071000737B2 /* UIView+RTL.m */,
+			);
+			path = GFSRTL;
+			sourceTree = "<group>";
+		};
 		D664A80E1F46CA720069A63E = {
 			isa = PBXGroup;
 			children = (
@@ -102,25 +124,11 @@
 		D664A8191F46CA720069A63E /* MasonryRTLTest */ = {
 			isa = PBXGroup;
 			children = (
+				D6528D131F481071000737B2 /* GFSRTL */,
 				D664A81D1F46CA720069A63E /* AppDelegate.h */,
 				D664A81E1F46CA720069A63E /* AppDelegate.m */,
 				D664A8201F46CA720069A63E /* ViewController.h */,
 				D664A8211F46CA720069A63E /* ViewController.m */,
-				D6E184DE1F46FA5800F19D5A /* GFSRTL.h */,
-				D6E184DB1F46F74400F19D5A /* RTLManager.h */,
-				D6E184DC1F46F74400F19D5A /* RTLManager.m */,
-				D6E184D21F46F49A00F19D5A /* UILabel+RTL.h */,
-				D6E184D31F46F49A00F19D5A /* UILabel+RTL.m */,
-				D6E184D81F46F59A00F19D5A /* UITextField+RTL.h */,
-				D6E184D91F46F59A00F19D5A /* UITextField+RTL.m */,
-				D6E184D51F46F50000F19D5A /* UITextView+RTL.h */,
-				D6E184D61F46F50000F19D5A /* UITextView+RTL.m */,
-				D664A8341F46D3950069A63E /* MASConstraint+RTL.h */,
-				D664A8351F46D3950069A63E /* MASConstraint+RTL.m */,
-				D664A8311F46CDB70069A63E /* MASConstraintMaker+RTL.h */,
-				D664A8321F46CDB70069A63E /* MASConstraintMaker+RTL.m */,
-				D6E184CF1F46EE7C00F19D5A /* UIView+RTL.h */,
-				D6E184D01F46EE7C00F19D5A /* UIView+RTL.m */,
 				D664A8261F46CA720069A63E /* Assets.xcassets */,
 				D664A8281F46CA720069A63E /* LaunchScreen.storyboard */,
 				D664A82B1F46CA720069A63E /* Info.plist */,
@@ -258,16 +266,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6E184DD1F46F74400F19D5A /* RTLManager.m in Sources */,
+				D6528D281F481071000737B2 /* UITextView+RTL.m in Sources */,
+				D6528D271F481071000737B2 /* UITextField+RTL.m in Sources */,
 				D664A8221F46CA720069A63E /* ViewController.m in Sources */,
-				D6E184D41F46F49A00F19D5A /* UILabel+RTL.m in Sources */,
-				D664A8361F46D3950069A63E /* MASConstraint+RTL.m in Sources */,
+				D6528D261F481071000737B2 /* UILabel+RTL.m in Sources */,
+				D6528D231F481071000737B2 /* MASConstraint+RTL.m in Sources */,
+				D6528D291F481071000737B2 /* UIView+RTL.m in Sources */,
+				D6528D251F481071000737B2 /* RTLManager.m in Sources */,
 				D664A81F1F46CA720069A63E /* AppDelegate.m in Sources */,
-				D6E184D11F46EE7C00F19D5A /* UIView+RTL.m in Sources */,
-				D664A8331F46CDB70069A63E /* MASConstraintMaker+RTL.m in Sources */,
-				D6E184D71F46F50000F19D5A /* UITextView+RTL.m in Sources */,
 				D664A81C1F46CA720069A63E /* main.m in Sources */,
-				D6E184DA1F46F59A00F19D5A /* UITextField+RTL.m in Sources */,
+				D6528D241F481071000737B2 /* MASConstraintMaker+RTL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

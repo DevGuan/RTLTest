@@ -7,4 +7,5 @@ target 'MasonryRTLTest' do
 
   # Pods for MasonryRTLTest
   pod 'Masonry'
+  pod 'Aspects'
 end
