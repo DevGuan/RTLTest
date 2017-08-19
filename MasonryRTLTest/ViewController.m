@@ -10,7 +10,7 @@
 #import <Masonry.h>
 #import "GFSRTL.h"
 
-@interface ViewController ()
+@interface ViewController ()<UINavigationControllerDelegate>
 @property (weak ,nonatomic)UILabel *leftLabel;
 @property (weak ,nonatomic)UILabel *rightLabel;
 @end
@@ -65,7 +65,11 @@
     self.title = btn.currentTitle;
 }
 
-
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+//    self.navigationController.delegate = self;
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -75,7 +79,9 @@
     [[RTLManager appearance]setRTL:!sender.selected];
     sender.selected = !sender.selected;
     
+    
     [self.navigationController pushViewController:[ViewController new] animated:YES];
 }
+
 
 @end

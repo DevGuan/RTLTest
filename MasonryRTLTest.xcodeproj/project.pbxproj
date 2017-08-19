@@ -15,6 +15,8 @@
 		D6528D271F481071000737B2 /* UITextField+RTL.m in Sources */ = {isa = PBXBuildFile; fileRef = D6528D1E1F481071000737B2 /* UITextField+RTL.m */; };
 		D6528D281F481071000737B2 /* UITextView+RTL.m in Sources */ = {isa = PBXBuildFile; fileRef = D6528D201F481071000737B2 /* UITextView+RTL.m */; };
 		D6528D291F481071000737B2 /* UIView+RTL.m in Sources */ = {isa = PBXBuildFile; fileRef = D6528D221F481071000737B2 /* UIView+RTL.m */; };
+		D6528D431F483E8B000737B2 /* UINavigationController+RTL.m in Sources */ = {isa = PBXBuildFile; fileRef = D6528D401F483E8B000737B2 /* UINavigationController+RTL.m */; };
+		D6528D441F483E8B000737B2 /* UINavigationItem+RTL.m in Sources */ = {isa = PBXBuildFile; fileRef = D6528D421F483E8B000737B2 /* UINavigationItem+RTL.m */; };
 		D664A81C1F46CA720069A63E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D664A81B1F46CA720069A63E /* main.m */; };
 		D664A81F1F46CA720069A63E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D664A81E1F46CA720069A63E /* AppDelegate.m */; };
 		D664A8221F46CA720069A63E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D664A8211F46CA720069A63E /* ViewController.m */; };
@@ -41,6 +43,10 @@
 		D6528D201F481071000737B2 /* UITextView+RTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+RTL.m"; sourceTree = "<group>"; };
 		D6528D211F481071000737B2 /* UIView+RTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RTL.h"; sourceTree = "<group>"; };
 		D6528D221F481071000737B2 /* UIView+RTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RTL.m"; sourceTree = "<group>"; };
+		D6528D3F1F483E8B000737B2 /* UINavigationController+RTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+RTL.h"; sourceTree = "<group>"; };
+		D6528D401F483E8B000737B2 /* UINavigationController+RTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+RTL.m"; sourceTree = "<group>"; };
+		D6528D411F483E8B000737B2 /* UINavigationItem+RTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+RTL.h"; sourceTree = "<group>"; };
+		D6528D421F483E8B000737B2 /* UINavigationItem+RTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+RTL.m"; sourceTree = "<group>"; };
 		D664A8171F46CA720069A63E /* MasonryRTLTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasonryRTLTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D664A81B1F46CA720069A63E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D664A81D1F46CA720069A63E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -91,6 +97,10 @@
 				D6528D181F481071000737B2 /* MASConstraintMaker+RTL.m */,
 				D6528D191F481071000737B2 /* RTLManager.h */,
 				D6528D1A1F481071000737B2 /* RTLManager.m */,
+				D6528D3F1F483E8B000737B2 /* UINavigationController+RTL.h */,
+				D6528D401F483E8B000737B2 /* UINavigationController+RTL.m */,
+				D6528D411F483E8B000737B2 /* UINavigationItem+RTL.h */,
+				D6528D421F483E8B000737B2 /* UINavigationItem+RTL.m */,
 				D6528D1B1F481071000737B2 /* UILabel+RTL.h */,
 				D6528D1C1F481071000737B2 /* UILabel+RTL.m */,
 				D6528D1D1F481071000737B2 /* UITextField+RTL.h */,
@@ -267,8 +277,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D6528D281F481071000737B2 /* UITextView+RTL.m in Sources */,
+				D6528D431F483E8B000737B2 /* UINavigationController+RTL.m in Sources */,
 				D6528D271F481071000737B2 /* UITextField+RTL.m in Sources */,
 				D664A8221F46CA720069A63E /* ViewController.m in Sources */,
+				D6528D441F483E8B000737B2 /* UINavigationItem+RTL.m in Sources */,
 				D6528D261F481071000737B2 /* UILabel+RTL.m in Sources */,
 				D6528D231F481071000737B2 /* MASConstraint+RTL.m in Sources */,
 				D6528D291F481071000737B2 /* UIView+RTL.m in Sources */,
