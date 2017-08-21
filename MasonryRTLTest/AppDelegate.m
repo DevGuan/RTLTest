@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-//    [[RTLManager appearance]setRTL:YES];
+    [[RTLManager appearance]setRTL:YES];
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
 //    [UIView appearance].semanticContentAttribute = UISemanticContentAttributeForceRightToLeft;
     UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:[ViewController new]];
