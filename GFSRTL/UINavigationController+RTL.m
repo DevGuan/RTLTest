@@ -35,9 +35,14 @@
 {
     self.view.backgroundColor = [UIColor whiteColor];
 //    // Do any additional setup after loading the view.
-    self.interactivePopGestureRecognizer.delegate = self;
-    self.delegate = self;
+    if ([[RTLManager appearance]RTL]) {
+        self.delegate = self;
+    }else{
+        self.interactivePopGestureRecognizer.delegate = self;
+    }
+    
     self.interactivePopGestureRecognizer.enabled = ![[RTLManager appearance]RTL];
+    
     [self RTL_ViewWillAppear:animate];
 }
 
