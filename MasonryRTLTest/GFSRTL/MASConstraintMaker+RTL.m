@@ -13,6 +13,7 @@
 
 + (void)load
 {
+    /*
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         // 交换方法  取出masonry的一个私有方法
@@ -24,7 +25,7 @@
             SEL method = method_getName(allFuncs[i]);
     
             NSString *methodName = [NSString stringWithCString:sel_getName(method) encoding:NSUTF8StringEncoding];
-            NSLog(@"member method:%@", methodName);
+//            NSLog(@"member method:%@", methodName);
             
             if ([methodName isEqualToString:@"addConstraintWithLayoutAttribute:"]) {
                 private = method;
@@ -35,27 +36,44 @@
         
         method_exchangeImplementations(oldP, newP);
     });
+     */
+}
+- (void)setLeft_RTL:(MASConstraint *)left_RTL
+{
+    // 不需要
+}
+- (void)setRight_RTL:(MASConstraint *)right_RTL
+{
+    // 不需要
 }
 
-- (MASConstraint *)left
+- (MASConstraint *)left_RTL
 {
     BOOL RTL = [[RTLManager appearance]RTL];
-    return [self YS_addConstraintWithLayoutAttribute:RTL ? NSLayoutAttributeRight :NSLayoutAttributeLeft];
+    return RTL ? self.right : self.left;
+//    return [self YS_addConstraintWithLayoutAttribute:RTL ? NSLayoutAttributeRight :NSLayoutAttributeLeft];
 }
-- (MASConstraint *)right
+- (MASConstraint *)right_RTL
 {
     BOOL RTL = [[RTLManager appearance]RTL];
-    return [self YS_addConstraintWithLayoutAttribute:RTL ? NSLayoutAttributeLeft : NSLayoutAttributeRight];
+    return RTL ? self.left : self.right;
+//    return [self YS_addConstraintWithLayoutAttribute:RTL ? NSLayoutAttributeLeft : NSLayoutAttributeRight];
 }
 
-MASConstraint * YS_addConstraintWithLayoutAttribute(NSLayoutAttribute layoutAttribute);
+//- (MASConstraint *)left
+//{
+//    BOOL RTL = [[RTLManager appearance]RTL];
+//    return [self YS_addConstraintWithLayoutAttribute:RTL ? NSLayoutAttributeRight :NSLayoutAttributeLeft];
+//}
+//- (MASConstraint *)right
+//{
+//    BOOL RTL = [[RTLManager appearance]RTL];
+//    return [self YS_addConstraintWithLayoutAttribute:RTL ? NSLayoutAttributeLeft : NSLayoutAttributeRight];
+//}
 
-- (MASConstraint*)YS_addConstraintWithLayoutAttribute:(NSLayoutAttribute) layoutAttribute{
-//    SEL private = @selector(addConstraintWithLayoutAttribute:);
-//    
-//    IMP imp = [self methodForSelector:private];
-//    MASConstraint* (*func)(NSLayoutAttribute) = imp;
-//    return func(layoutAttribute);
-    return [self YS_addConstraintWithLayoutAttribute:layoutAttribute];
-}
+
+//- (MASConstraint*)YS_addConstraintWithLayoutAttribute:(NSLayoutAttribute) layoutAttribute{
+//
+//    return [self YS_addConstraintWithLayoutAttribute:layoutAttribute];
+//}
 @end

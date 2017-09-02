@@ -20,6 +20,7 @@
         Method oldP = class_getInstanceMethod(self, old);
         Method newP = class_getInstanceMethod(self, new);
         
+        method_exchangeImplementations(class_getInstanceMethod(self, @selector(setPlaceholder:)), class_getInstanceMethod(self, @selector(RTL_setPlaceholder:)));
         method_exchangeImplementations(oldP, newP);
     });
 }
@@ -28,10 +29,21 @@
     if ([[RTLManager appearance]RTL]) {
         if (align == NSTextAlignmentLeft) {
             align = NSTextAlignmentRight;
+            
         }else if (align == NSTextAlignmentRight) {
             align = NSTextAlignmentLeft;
         }
     }
+    
     [self RTL_setAlignment:align];
+}
+
+- (void)RTL_setPlaceholder:(NSString *)placeHolder
+{
+    NSMutableParagraphStyle *style = [self.defaultTextAttributes[NSParagraphStyleAttributeName] mutableCopy];
+    style.alignment = [[RTLManager appearance]RTL] ? NSTextAlignmentRight : NSTextAlignmentLeft;
+    
+    self.attributedPlaceholder = [[NSAttributedString alloc]initWithString:placeHolder attributes:@{NSParagraphStyleAttributeName : style}];
+    [self RTL_setPlaceholder:placeHolder];
 }
 @end

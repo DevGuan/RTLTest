@@ -31,7 +31,7 @@
     _leftLabel = label;
     label.textAlignment = NSTextAlignmentLeft;
     [label mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.view).offset_RTL(10);
+        make.left_RTL.equalTo(self.view.mas_leftRTL).offset_RTL(10);
         make.top.equalTo(self.view).offset(50);
         make.height.equalTo(@30);
         make.width.equalTo(@120);
@@ -44,7 +44,7 @@
     _rightLabel = label2;
     label2.textAlignment = NSTextAlignmentLeft;
     [label2 mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(label.mas_rightRTL).offset_RTL(10);
+        make.left_RTL.equalTo(label.mas_rightRTL).offset_RTL(10);
         make.top.equalTo(self.view).offset(50);
         make.height.equalTo(@30);
         make.width.equalTo(@120);

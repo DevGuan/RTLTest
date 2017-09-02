@@ -14,11 +14,15 @@
 - (MASViewAttribute *)mas_leftRTL
 {
     BOOL RTL = [[RTLManager appearance]RTL];
-    return [[MASViewAttribute alloc] initWithView:self layoutAttribute:RTL ? NSLayoutAttributeRight : NSLayoutAttributeLeft];
+    
+    return RTL ? self.mas_right : self.mas_left;
+//    return [[MASViewAttribute alloc] initWithView:self layoutAttribute:RTL ? NSLayoutAttributeRight : NSLayoutAttributeLeft];
 }
 - (MASViewAttribute *)mas_rightRTL
 {
     BOOL RTL = [[RTLManager appearance]RTL];
-    return [[MASViewAttribute alloc] initWithView:self layoutAttribute:RTL ? NSLayoutAttributeLeft : NSLayoutAttributeRight];
+    
+    return RTL ? self.mas_left : self.mas_right;
+//    return [[MASViewAttribute alloc] initWithView:self layoutAttribute:RTL ? NSLayoutAttributeLeft : NSLayoutAttributeRight];
 }
 @end
